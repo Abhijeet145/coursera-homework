@@ -1,3 +1,83 @@
-*{
-font family:verdana;
+* {
+     box-sizing: border-box;
+     font-family: Arial, Helvetica,sans-serif ;
+}
+	 
+body {
+      background-color:#ffcccc;
+}	
+     
+h1 {
+	     text-align: center;
+         font-size:175%;
+ }
+	 
+section {
+        border: 1px solid black;
+        background-color: #b3c3d3;
+        margin: 10px;
+}	
+		 
+section>h2 {
+              float: right;
+              border-bottom: 1px solid black;
+              border-left: 1px solid black;
+              margin: 0;
+              width: 150px;
+              text-align: center;
+              font-style: Times;
+              font-size: 125%;
+              font-weight: bold;
+              height: 45px;
+              padding-top: 10px;
+}
+	.row{
+        width:100%;
+        overflow:auto;
+    }
+
+ .audi>section>h2 {
+    background-color: #77b7de;
+                    
+}
+	
+.bmw>section>h2 {
+                    background-color: #ffaaaa;
+}	
+
+.ferrari>section>h2 {
+                    background-color: #ffccff;
+}
+	 
+section>p {
+    padding: 40px 15px 15px 15px;
+    
+}	 
+
+
+@media(min-width:992px) {
+          .audi,.bmw,.ferrari{
+		   float:left;	
+		   width:33.33%;
+		  }
+			
+}		
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .audi,.bmw {
+        float: left;
+        width: 50%;
+    }
+   .ferrari{
+    float: left;
+    width:100%;
+   }
+}
+
+@media   (max-width: 767px) {
+    .audi,.bmw,.ferrari {
+        float: left;
+        width: 100%;
+    }
 }
