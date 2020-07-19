@@ -1,3 +1,8 @@
+
+
+*{
+  box-sizing: border-box;
+}
 body {
   font-size: 16px;
   color: #fff;
@@ -15,6 +20,7 @@ body {
 }
  .navbar,.bg-dark,.navbar-dark{
   padding:0;
+  background-color: #ff0000;
  }
  .navbar-brand{
   padding-left: 35px;
@@ -23,14 +29,14 @@ body {
   margin-right: 25px;
  }
 
-  #chicken, #beef, #sushi{
-  padding: 20px;
-  margin-bottom:35px ;
-  background-color: #372856;
+section{
+  margin-top: 20px;
+  border: 1px solid green;
+  background-color: #d7117a;
   width:100%;
 }
-#chicken{
-  margin-top:30px;
+section>p{
+  padding: 15px 15px 15px 15px;
 }
 .nav-item{
   border-bottom: 1px solid lightgrey;
@@ -40,17 +46,10 @@ body {
   border-collapse: collapse;
 }
 /** SMALL Devices only **/
-@media (min-width: 300px) and (max-width:575px) 
+@media (min-width: 300px) and (max-width:767px) 
 {
   .navbar-toggler{
     display: inline-block;
   }
-}
-@media (max-width: 575px){
-  #chicken, #beef, #sushi{
-  padding: 20px;
-  margin:35px;
-  background-color: #372856;
-  width:100%;
 }
 }
