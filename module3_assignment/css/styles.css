@@ -40,12 +40,13 @@ body {
   border-collapse: collapse;
 }
 /** SMALL Devices only **/
-@media (min-width: 300px) and (max-width:767px) 
+@media (min-width: 300px) and (max-width:575px) 
 {
   .navbar-toggler{
     display: inline-block;
   }
-  
+}
+@media (max-width: 575px){
   #chicken, #beef, #sushi{
   padding: 20px;
   margin:35px;
