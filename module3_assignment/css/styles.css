@@ -40,7 +40,7 @@ body {
   border-collapse: collapse;
 }
 /** SMALL Devices only **/
-@media (min-width: 300px) and (max-width:575px) 
+@media (min-width: 300px) and (max-width:767px) 
 {
   .navbar-toggler{
     display: inline-block;
